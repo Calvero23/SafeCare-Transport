@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafeCare Transportation | Non-Emergency Medical Rides in Elkhart, IN</title>
+  <meta name="description" content="SafeCare Transportation provides non-emergency medical transportation, senior appointment rides, dialysis trips, therapy rides, discharge pickups, and facility-coordinated transportation in Elkhart and nearby Northern Indiana." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Nunito+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/main.css" />
+  <link rel="stylesheet" href="src/css/components.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "SafeCare Transportation",
+    "telephone": "+1-574-206-4245",
+    "email": "elkhartaxiservice@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Elkhart",
+      "addressRegion": "IN",
+      "postalCode": "46516",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Elkhart IN", "Goshen IN", "Mishawaka IN", "South Bend IN", "Granger IN", "Nappanee IN", "Bristol IN", "Middlebury IN"],
+    "priceRange": "$$",
+    "description": "Non-emergency medical transportation and scheduled appointment rides for families, seniors, facilities, and care coordinators in Elkhart County and nearby Northern Indiana."
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-strip" aria-label="Contact and service notice">
+      <div class="top-strip__inner container">
+        <div class="top-strip__contact">
+          <a href="tel:+15742064245">574-206-4245</a>
+          <a href="mailto:elkhartaxiservice@gmail.com">elkhartaxiservice@gmail.com</a>
+          <span>Elkhart, IN</span>
+        </div>
+        <div class="top-strip__trust">
+          <span>Medical appointment rides</span>
+          <span>Senior and facility coordination</span>
+          <span class="top-strip__alert">For emergencies, call 911</span>
+        </div>
+      </div>
+    </div>
+    <div class="nav">
+      <div class="nav__inner container">
+        <a href="index.html" class="nav__logo">
+          <span>SafeCare</span>
+          <strong>Transportation</strong>
+        </a>
+        <nav class="nav__links">
+          <a href="#services">Services</a>
+          <a href="#who-we-help">Who We Help</a>
+          <a href="#process">Process</a>
+          <a href="#service-area">Service Area</a>
+          <a href="src/pages/contact.html" class="btn btn--primary">Request Ride</a>
+        </nav>
+        <button class="nav__toggle" aria-label="Toggle menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="booking-hero" id="ride-request">
+      <div class="container booking-hero__grid">
+        <div class="booking-hero__content">
+          <div class="hero-pills" aria-label="Medical ride types">
+            <span>Medical Appointments</span>
+            <span>Senior Rides</span>
+            <span>Facility Trips</span>
+          </div>
+          <p class="eyebrow">Non-Emergency Medical Transportation</p>
+          <h1>Reliable medical rides for appointments, care visits, and scheduled transportation.</h1>
+          <p>SafeCare Transportation helps riders, families, caregivers, and facilities coordinate non-emergency transportation across Elkhart County and nearby Northern Indiana.</p>
+          <div class="booking-hero__actions">
+            <a href="src/pages/contact.html" class="btn btn--primary btn--lg">Request a Medical Ride</a>
+            <a href="tel:+15742064245" class="btn btn--outline-dark btn--lg">Call 574-206-4245</a>
+          </div>
+          <div class="booking-hero__proof">
+            <span><strong>Scheduled</strong> appointment rides</span>
+            <span><strong>Caregiver</strong> coordination</span>
+            <span><strong>Return trip</strong> planning</span>
+          </div>
+          <figure class="booking-hero__image">
+            <img src="public/images/AdobeStock_657784456.jpeg" alt="Caregiver helping an older adult prepare for transportation" />
+            <figcaption>
+              <span>Rides are confirmed before pickup.</span>
+              <strong>Share appointment and mobility details when scheduling.</strong>
+            </figcaption>
+          </figure>
+        </div>
+
+        <form class="booking-panel js-contact-form" action="#" method="post">
+          <div class="booking-panel__header">
+            <p class="eyebrow">Medical Ride Request</p>
+            <h2>Send appointment details.</h2>
+            <p>Online requests are reviewed and confirmed by phone before the ride is scheduled.</p>
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="home-name">Rider or contact name</label>
+              <input type="text" id="home-name" name="name" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="home-phone">Best phone</label>
+              <input type="tel" id="home-phone" name="phone" autocomplete="tel" required />
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="home-pickup">Pickup address</label>
+              <input type="text" id="home-pickup" name="pickup" required />
+            </div>
+            <div class="form-group">
+              <label for="home-dropoff">Appointment location</label>
+              <input type="text" id="home-dropoff" name="dropoff" required />
+            </div>
+          </div>
+          <div class="form-grid form-grid--three">
+            <div class="form-group">
+              <label for="home-date">Date</label>
+              <input type="date" id="home-date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="home-time">Pickup or appointment time</label>
+              <input type="time" id="home-time" name="time" required />
+            </div>
+            <div class="form-group">
+              <label for="home-ride-type">Ride type</label>
+              <select id="home-ride-type" name="ride-type" required>
+                <option value="">Select</option>
+                <option>Doctor Appointment</option>
+                <option>Dialysis</option>
+                <option>Therapy or Rehab</option>
+                <option>Hospital Discharge</option>
+                <option>Senior Transportation</option>
+                <option>Facility Coordination</option>
+                <option>Other Medical Ride</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="home-return">Return ride needed?</label>
+              <select id="home-return" name="return-ride">
+                <option>Not sure yet</option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="home-mobility">Mobility notes</label>
+              <input type="text" id="home-mobility" name="mobility" placeholder="Walker, escort, wheelchair questions, etc." />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="home-notes">Care or scheduling notes</label>
+            <textarea id="home-notes" name="notes" placeholder="Appointment time, expected wait time, caregiver contact, facility notes, payment or billing questions."></textarea>
+          </div>
+          <label class="checkbox-line">
+            <input type="checkbox" name="consent" required />
+            <span>I agree to be contacted about this transportation request.</span>
+          </label>
+          <button type="submit" class="btn btn--primary btn--lg">Submit Medical Ride Request</button>
+          <p class="booking-panel__note">Submitting this form does not confirm your ride until we contact you.</p>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="quick-paths" aria-label="Ways to schedule medical rides">
+      <div class="container quick-paths__grid">
+        <article>
+          <span>Same-day question?</span>
+          <h2>Call to confirm availability.</h2>
+          <p>Best for urgent scheduling questions, discharge timing, and appointment changes.</p>
+          <a href="tel:+15742064245">Call 574-206-4245</a>
+        </article>
+        <article>
+          <span>Planning ahead?</span>
+          <h2>Send the appointment details.</h2>
+          <p>Best for dialysis, therapy, recurring appointments, senior rides, and facility coordination.</p>
+          <a href="src/pages/contact.html">Request Online</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-services" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>Medical transportation for trips that need planning and clear communication.</h2>
+          <p>SafeCare focuses on non-emergency ride requests where timing, rider comfort, caregiver contact, and return-trip details matter.</p>
+        </div>
+        <div class="service-tiles">
+          <a href="src/pages/nemt.html" class="service-tile">
+            <span>01</span>
+            <h3>Medical Appointment Rides</h3>
+            <p>Doctor visits, imaging, therapy, dialysis, follow-ups, and pharmacy stops.</p>
+          </a>
+          <a href="src/pages/senior.html" class="service-tile">
+            <span>02</span>
+            <h3>Senior Transportation</h3>
+            <p>Scheduled rides for seniors, families, caregivers, and recurring weekly needs.</p>
+          </a>
+          <a href="src/pages/facilities.html" class="service-tile">
+            <span>03</span>
+            <h3>Facility Coordination</h3>
+            <p>Ride requests for clinics, rehab centers, senior communities, and care teams.</p>
+          </a>
+          <a href="src/pages/contact.html" class="service-tile">
+            <span>04</span>
+            <h3>Discharge and Return Trips</h3>
+            <p>Pickup planning for hospital discharge, care visits, and return transportation.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-section" id="who-we-help">
+      <div class="container trust-section__grid">
+        <div>
+          <p class="eyebrow">Who We Help</p>
+          <h2>Built for riders, families, and coordinators.</h2>
+          <p>Medical rides often involve more than a pickup and drop-off. SafeCare collects the details needed to confirm timing, contact information, destination instructions, mobility notes, and whether a return trip is needed.</p>
+          <ul class="check-list">
+            <li>Private-pay riders going to medical appointments</li>
+            <li>Families scheduling rides for parents or loved ones</li>
+            <li>Senior communities and care coordinators</li>
+            <li>Facilities that need repeatable ride intake details</li>
+          </ul>
+        </div>
+        <div class="trust-card">
+          <h3>Important service note</h3>
+          <p>SafeCare is for non-emergency transportation. If there is a medical emergency, call 911. Wheelchair service, ADA-accessible vehicle availability, broker enrollment, and specialized medical transport requirements must be confirmed before booking.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section page-section--muted" id="process">
+      <div class="container split-section">
+        <div>
+          <p class="eyebrow">Scheduling Process</p>
+          <h2>A clearer intake path for medical rides.</h2>
+          <p>Use the same dependable local transportation base, but with a more focused medical ride workflow.</p>
+        </div>
+        <div class="step-list">
+          <div class="step">
+            <span>1</span>
+            <p>Collect rider name, pickup address, appointment location, date, time, phone contact, and mobility notes.</p>
+          </div>
+          <div class="step">
+            <span>2</span>
+            <p>Confirm availability, timing, return ride needs, vehicle requirements, and payment or billing path.</p>
+          </div>
+          <div class="step">
+            <span>3</span>
+            <p>Record completion details for receipts, invoices, partner reporting, or internal follow-up.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-area-home" id="service-area">
+      <div class="container service-area-home__grid">
+        <div>
+          <p class="eyebrow">Service Area</p>
+          <h2>Serving Elkhart and nearby Northern Indiana.</h2>
+          <p>Primary ride requests are focused around Elkhart County and nearby communities. Longer medical trips may be available by quote when timing and driver capacity allow.</p>
+        </div>
+        <div class="area-tags">
+          <span>Elkhart</span>
+          <span>Goshen</span>
+          <span>Mishawaka</span>
+          <span>South Bend</span>
+          <span>Granger</span>
+          <span>Nappanee</span>
+          <span>Bristol</span>
+          <span>Middlebury</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Medical ride questions.</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Is this ambulance service?</summary>
+            <p>No. SafeCare is for non-emergency medical transportation. For emergencies, call 911.</p>
+          </details>
+          <details>
+            <summary>Can a family member schedule for a rider?</summary>
+            <p>Yes. Families and caregivers can request rides and provide appointment, pickup, return ride, and contact details.</p>
+          </details>
+          <details>
+            <summary>Can facilities request recurring rides?</summary>
+            <p>Yes. Clinics, rehab centers, senior communities, and care coordinators can discuss recurring transportation needs and documentation expectations.</p>
+          </details>
+          <details>
+            <summary>Do you provide wheelchair transportation?</summary>
+            <p>Wheelchair service and ADA-accessible vehicle availability must be confirmed before booking and should not be assumed from a general request.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a href="tel:+15742064245" class="sticky-call">Call 574-206-4245</a>
+
+  <footer class="footer footer--extended">
+    <div class="container footer__top">
+      <div>
+        <p class="eyebrow">SafeCare Transportation</p>
+        <h2>Schedule non-emergency medical transportation with clear pickup and appointment details.</h2>
+      </div>
+      <a href="tel:+15742064245" class="footer__phone">574-206-4245</a>
+    </div>
+    <div class="container footer__grid">
+      <div>
+        <strong>SafeCare Transportation</strong>
+        <p>Elkhart, IN 46516</p>
+        <p><a href="mailto:elkhartaxiservice@gmail.com">elkhartaxiservice@gmail.com</a></p>
+      </div>
+      <div>
+        <strong>Services</strong>
+        <a href="src/pages/nemt.html">Medical Transportation</a>
+        <a href="src/pages/senior.html">Senior Rides</a>
+        <a href="src/pages/facilities.html">Facility Coordination</a>
+        <a href="src/pages/contact.html">Request a Ride</a>
+      </div>
+      <div>
+        <strong>Service Areas</strong>
+        <p>Elkhart, Goshen, Mishawaka, South Bend, Granger, Nappanee, Bristol, Middlebury, Osceola, and nearby Northern Indiana.</p>
+      </div>
+      <div>
+        <strong>Hours</strong>
+        <p>Call for current availability. Scheduled medical rides should be requested as early as practical.</p>
+      </div>
+    </div>
+    <p class="footer__copy">&copy; 2026 SafeCare Transportation. All rights reserved.</p>
+  </footer>
+
+  <script src="src/js/main.js"></script>
+  <script src="src/js/booking.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request a Medical Ride in Elkhart, IN | SafeCare Transportation</title>
+  <meta name="description" content="Request non-emergency medical transportation in Elkhart, IN for appointments, dialysis, therapy, senior rides, discharge pickups, and facility-coordinated transportation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Nunito+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__inner container">
+      <a href="../../index.html" class="nav__logo"><span>SafeCare</span><strong>Transportation</strong></a>
+      <nav class="nav__links">
+        <a href="services.html">Services</a>
+        <a href="nemt.html">Medical Rides</a>
+        <a href="senior.html">Senior Rides</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="contact.html" class="btn btn--primary">Request Ride</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <p class="eyebrow">Request a Ride</p>
+        <h1>Schedule a non-emergency medical ride or ask about facility transportation.</h1>
+        <p>Send pickup, appointment, return ride, and mobility details. Online requests are confirmed by phone before the ride is scheduled.</p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container contact-layout">
+        <aside class="contact-panel">
+          <p class="eyebrow">Call First</p>
+          <h2>For same-day medical ride questions, call directly.</h2>
+          <p>Calling is usually the clearest way to discuss availability, appointment timing, facility pickup instructions, discharge changes, and return ride needs.</p>
+          <dl class="detail-list">
+            <div>
+              <dt>Phone</dt>
+              <dd><a href="tel:+15742064245">574-206-4245</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:elkhartaxiservice@gmail.com">elkhartaxiservice@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>Service Area</dt>
+              <dd>Elkhart, Goshen, Mishawaka, South Bend, Granger, and nearby Northern Indiana communities</dd>
+            </div>
+          </dl>
+          <p class="notice">SafeCare is for non-emergency transportation. For emergencies, call 911.</p>
+        </aside>
+
+        <form class="form-card js-contact-form" action="#" method="post">
+          <p class="eyebrow">Medical Ride Intake</p>
+          <h2>Send ride details.</h2>
+          <p class="form-intro">Include as many appointment and contact details as possible so the ride can be reviewed and confirmed.</p>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Rider or contact name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Best phone</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" required />
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="pickup">Pickup address</label>
+              <input type="text" id="pickup" name="pickup" required />
+            </div>
+            <div class="form-group">
+              <label for="dropoff">Appointment or facility address</label>
+              <input type="text" id="dropoff" name="dropoff" required />
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="date">Ride date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="time">Pickup or appointment time</label>
+              <input type="time" id="time" name="time" required />
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="ride-type">Ride type</label>
+              <select id="ride-type" name="ride-type" required>
+                <option value="">Select</option>
+                <option>Doctor Appointment</option>
+                <option>Dialysis</option>
+                <option>Therapy or Rehab</option>
+                <option>Hospital Discharge</option>
+                <option>Senior Transportation</option>
+                <option>Facility Coordination</option>
+                <option>Other Medical Ride</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="return-ride">Return ride needed?</label>
+              <select id="return-ride" name="return-ride">
+                <option>Not sure yet</option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="mobility">Mobility or vehicle notes</label>
+              <input type="text" id="mobility" name="mobility" placeholder="Walker, escort, wheelchair questions, etc." />
+            </div>
+            <div class="form-group">
+              <label for="contact-role">Requester role</label>
+              <select id="contact-role" name="contact-role">
+                <option>Rider</option>
+                <option>Family or caregiver</option>
+                <option>Facility or clinic</option>
+                <option>Care coordinator</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group" id="facility-inquiry">
+            <label for="notes">Appointment, facility, or scheduling notes</label>
+            <textarea id="notes" name="notes" placeholder="Appointment time, facility department, expected wait time, caregiver contact, return trip window, payment or billing questions."></textarea>
+          </div>
+
+          <label class="checkbox-line">
+            <input type="checkbox" name="consent" required />
+            <span>I agree to be contacted about this transportation request.</span>
+          </label>
+
+          <button type="submit" class="btn btn--primary btn--lg">Submit Request</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <a href="tel:+15742064245" class="sticky-call">Call 574-206-4245</a>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div><strong>SafeCare Transportation</strong><p>Elkhart, IN 46516</p><p><a href="tel:+15742064245">574-206-4245</a></p><p><a href="mailto:elkhartaxiservice@gmail.com">elkhartaxiservice@gmail.com</a></p></div>
+      <div><strong>Services</strong><a href="services.html">Services</a><a href="nemt.html">Medical Transportation</a><a href="senior.html">Senior Rides</a><a href="facilities.html">Facility Coordination</a></div>
+      <div><strong>Service Areas</strong><p>Elkhart, Goshen, Mishawaka, South Bend, Granger, Nappanee, Bristol, Middlebury, Osceola, and nearby Northern Indiana.</p></div>
+      <div><strong>Hours</strong><p>Call for current availability. Scheduled medical rides should be requested as early as practical.</p></div>
+    </div>
+    <p class="footer__copy">&copy; 2026 SafeCare Transportation. All rights reserved.</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/booking.js"></script>
+</body>
+</html>
