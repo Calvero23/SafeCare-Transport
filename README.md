@@ -1,4 +1,4 @@
-# SafeCare Transportation — Website
+# SafeCare Medical Rides — Website
 
 Standalone static website for a non-emergency medical transportation brand serving Elkhart, Indiana and nearby Northern Indiana communities.
 
@@ -37,8 +37,8 @@ After the project is connected to GitHub, Cloudflare Pages can deploy directly f
 ## Launch Notes
 
 - Replace the demo form behavior in `src/js/booking.js` with Formspree, Cloudflare Forms, or another intake tool before relying on online submissions.
-- Add the final domain to metadata and sitemap once the domain is chosen.
-- Confirm whether the public brand should be `SafeCare Transport` or `SafeCare Transportation` before final launch.
+- Final public domain: `https://safecaremedicalrides.com`.
+- Local edits should be committed to GitHub `main`; Cloudflare Pages deploys the live site from GitHub.
 
 ## Pages
 
