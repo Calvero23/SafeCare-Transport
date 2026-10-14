@@ -7,7 +7,7 @@
   <meta name="description" content="SafeCare Medical Rides provides non-emergency medical transportation, senior appointment rides, dialysis trips, therapy rides, discharge pickups, and facility-coordinated transportation in Elkhart and nearby Northern Indiana." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Nunito+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/css/main.css" />
   <link rel="stylesheet" href="src/css/components.css" />
   <script type="application/ld+json">
@@ -15,8 +15,8 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "SafeCare Medical Rides",
-    "telephone": "+1-574-206-4245",
-    "email": "elkhartaxiservice@gmail.com",
+    "telephone": "+1-574-214-9226",
+    "email": "safecare70@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Elkhart",
@@ -36,14 +36,13 @@
     <div class="top-strip" aria-label="Contact and service notice">
       <div class="top-strip__inner container">
         <div class="top-strip__contact">
-          <a href="tel:+15742064245">574-206-4245</a>
-          <a href="mailto:elkhartaxiservice@gmail.com">elkhartaxiservice@gmail.com</a>
-          <span>Elkhart, IN</span>
+          <a href="tel:+15742149226">574-214-9226</a>
         </div>
-        <div class="top-strip__trust">
-          <span>Medical appointment rides</span>
-          <span>Senior and facility coordination</span>
-          <span class="top-strip__alert">For emergencies, call 911</span>
+        <div class="top-strip__marquee" aria-label="Service area announcement">
+          <div class="top-strip__marquee-track">
+            <span>Service areas: Elkhart, Goshen, Mishawaka, South Bend, Granger, Nappanee, Bristol, and Middlebury.</span>
+            <span>Service areas: Elkhart, Goshen, Mishawaka, South Bend, Granger, Nappanee, Bristol, and Middlebury.</span>
+          </div>
         </div>
       </div>
     </div>
@@ -55,8 +54,6 @@
         </a>
         <nav class="nav__links">
           <a href="#services">Services</a>
-          <a href="#who-we-help">Who We Help</a>
-          <a href="#process">Process</a>
           <a href="#service-area">Service Area</a>
           <a href="src/pages/contact.html" class="btn btn--primary">Request Ride</a>
         </nav>
@@ -69,22 +66,11 @@
     <section class="booking-hero" id="ride-request">
       <div class="container booking-hero__grid">
         <div class="booking-hero__content">
-          <div class="hero-pills" aria-label="Medical ride types">
-            <span>Medical Appointments</span>
-            <span>Senior Rides</span>
-            <span>Facility Trips</span>
-          </div>
-          <p class="eyebrow">Non-Emergency Medical Transportation</p>
-          <h1>Reliable medical rides for appointments, care visits, and scheduled transportation.</h1>
+          <h1>Reliable NEMT Transportation</h1>
           <p>SafeCare Medical Rides helps riders, families, caregivers, and facilities coordinate non-emergency transportation across Elkhart County and nearby Northern Indiana.</p>
           <div class="booking-hero__actions">
             <a href="src/pages/contact.html" class="btn btn--primary btn--lg">Request a Medical Ride</a>
-            <a href="tel:+15742064245" class="btn btn--outline-dark btn--lg">Call 574-206-4245</a>
-          </div>
-          <div class="booking-hero__proof">
-            <span><strong>Scheduled</strong> appointment rides</span>
-            <span><strong>Caregiver</strong> coordination</span>
-            <span><strong>Return trip</strong> planning</span>
+            <a href="tel:+15742149226" class="btn btn--outline-dark btn--lg">Call 574-214-9226</a>
           </div>
           <figure class="booking-hero__image">
             <img src="public/images/AdobeStock_657784456.jpeg" alt="Caregiver helping an older adult prepare for transportation" />
@@ -95,11 +81,10 @@
           </figure>
         </div>
 
-        <form class="booking-panel js-contact-form" action="#" method="post">
+        <form class="booking-panel js-contact-form" action="mailto:safecare70@gmail.com" method="post" data-recipient="safecare70@gmail.com" data-subject="SafeCare medical ride request">
           <div class="booking-panel__header">
-            <p class="eyebrow">Medical Ride Request</p>
-            <h2>Send appointment details.</h2>
-            <p>Online requests are reviewed and confirmed by phone before the ride is scheduled.</p>
+            <h2>Medical Transportation Request Form</h2>
+            <p>For day to day clinical visits, or medical related transportation, use our form below.</p>
           </div>
           <div class="form-grid">
             <div class="form-group">
@@ -162,10 +147,13 @@
             <label for="home-notes">Care or scheduling notes</label>
             <textarea id="home-notes" name="notes" placeholder="Appointment time, expected wait time, caregiver contact, facility notes, payment or billing questions."></textarea>
           </div>
-          <label class="checkbox-line">
-            <input type="checkbox" name="consent" required />
-            <span>I agree to be contacted about this transportation request.</span>
-          </label>
+          <div class="checkbox-line sms-consent">
+            <input type="checkbox" id="sms-consent" name="sms-consent" value="Yes — marketing and account notifications" aria-describedby="sms-disclosures sms-policy-links sms-optional" />
+            <div><label for="sms-consent">By checking this box, you agree to receive SMS messages about marketing and account notifications from Safe Care Transportation.</label>
+            <p id="sms-disclosures">Reply STOP to opt-out at any time. For help, text 574-214-9226. Message and data rates may apply. Messaging frequency may vary.</p>
+            <p id="sms-policy-links">See our <a href="src/pages/privacy.html" target="_blank" rel="noopener">Privacy Policy</a> and <a href="src/pages/terms.html" target="_blank" rel="noopener">SMS Terms and Conditions</a>.</p>
+            <p id="sms-optional">SMS consent is optional and is not a condition of purchase.</p></div>
+          </div>
           <button type="submit" class="btn btn--primary btn--lg">Submit Medical Ride Request</button>
           <p class="booking-panel__note">Submitting this form does not confirm your ride until we contact you.</p>
           <p class="form-status" aria-live="polite"></p>
@@ -179,7 +167,7 @@
           <span>Same-day question?</span>
           <h2>Call to confirm availability.</h2>
           <p>Best for urgent scheduling questions, discharge timing, and appointment changes.</p>
-          <a href="tel:+15742064245">Call 574-206-4245</a>
+          <a href="tel:+15742149226">Call 574-214-9226</a>
         </article>
         <article>
           <span>Planning ahead?</span>
@@ -187,6 +175,26 @@
           <p>Best for dialysis, therapy, recurring appointments, senior rides, and facility coordination.</p>
           <a href="src/pages/contact.html">Request Online</a>
         </article>
+      </div>
+    </section>
+
+    <section class="ride-support" aria-label="More about planning your ride">
+      <div class="container ride-support__grid">
+        <a class="ride-support__card" href="src/pages/nemt.html">
+          <h2>Scheduled appointment rides</h2>
+          <p>Explore transportation for medical visits and recurring appointments.</p>
+          <span>Explore medical rides <span aria-hidden="true">&rarr;</span></span>
+        </a>
+        <a class="ride-support__card" href="src/pages/senior.html">
+          <h2>Caregiver coordination</h2>
+          <p>Learn how families and caregivers can help arrange a ride.</p>
+          <span>Learn about caregiver support <span aria-hidden="true">&rarr;</span></span>
+        </a>
+        <a class="ride-support__card" href="src/pages/nemt.html#ride-planning">
+          <h2>Return trip planning</h2>
+          <p>See what details to share for pickup, appointment timing, and your return.</p>
+          <span>See planning details <span aria-hidden="true">&rarr;</span></span>
+        </a>
       </div>
     </section>
 
@@ -218,26 +226,6 @@
             <h3>Discharge and Return Trips</h3>
             <p>Pickup planning for hospital discharge, care visits, and return transportation.</p>
           </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="trust-section" id="who-we-help">
-      <div class="container trust-section__grid">
-        <div>
-          <p class="eyebrow">Who We Help</p>
-          <h2>Built for riders, families, and coordinators.</h2>
-          <p>Medical rides often involve more than a pickup and drop-off. SafeCare collects the details needed to confirm timing, contact information, destination instructions, mobility notes, and whether a return trip is needed.</p>
-          <ul class="check-list">
-            <li>Private-pay riders going to medical appointments</li>
-            <li>Families scheduling rides for parents or loved ones</li>
-            <li>Senior communities and care coordinators</li>
-            <li>Facilities that need repeatable ride intake details</li>
-          </ul>
-        </div>
-        <div class="trust-card">
-          <h3>Important service note</h3>
-          <p>SafeCare is for non-emergency transportation. If there is a medical emergency, call 911. Wheelchair service, ADA-accessible vehicle availability, broker enrollment, and specialized medical transport requirements must be confirmed before booking.</p>
         </div>
       </div>
     </section>
@@ -314,21 +302,19 @@
     </section>
   </main>
 
-  <a href="tel:+15742064245" class="sticky-call">Call 574-206-4245</a>
+  <a href="tel:+15742149226" class="sticky-call">Call 574-214-9226</a>
 
-  <footer class="footer footer--extended">
-    <div class="container footer__top">
-      <div>
-        <p class="eyebrow">SafeCare Medical Rides</p>
-        <h2>Schedule non-emergency medical transportation with clear pickup and appointment details.</h2>
-      </div>
-      <a href="tel:+15742064245" class="footer__phone">574-206-4245</a>
-    </div>
+  <footer class="footer">
     <div class="container footer__grid">
       <div>
         <strong>SafeCare Medical Rides</strong>
         <p>Elkhart, IN 46516</p>
-        <p><a href="mailto:elkhartaxiservice@gmail.com">elkhartaxiservice@gmail.com</a></p>
+        <p><a href="tel:+15742149226">574-214-9226</a></p>
+        <p><a href="mailto:safecare70@gmail.com">safecare70@gmail.com</a></p>
+        <div class="social-links" aria-label="SafeCare social media">
+          <a href="https://www.facebook.com/share/17e9rbNxzv/" target="_blank" rel="noopener" aria-label="SafeCare Medical Rides on Facebook" class="social-logo"><img src="public/images/facebook-logo.png" alt="" width="32" height="32" /></a>
+          <a href="https://www.tiktok.com/@safecaretransport?_r=1&amp;_t=ZP-97oWecIuBx9" target="_blank" rel="noopener" aria-label="SafeCare Medical Rides on TikTok" class="social-logo"><img src="public/images/tiktok-logo.png" alt="" width="32" height="32" /></a>
+        </div>
       </div>
       <div>
         <strong>Services</strong>
@@ -341,11 +327,8 @@
         <strong>Service Areas</strong>
         <p>Elkhart, Goshen, Mishawaka, South Bend, Granger, Nappanee, Bristol, Middlebury, Osceola, and nearby Northern Indiana.</p>
       </div>
-      <div>
-        <strong>Hours</strong>
-        <p>Call for current availability. Scheduled medical rides should be requested as early as practical.</p>
-      </div>
     </div>
+    <div class="container footer__legal"><strong>PRIVACY AND TERMS</strong><nav aria-label="Privacy and terms"><a href="src/pages/privacy.html">Privacy</a><a href="src/pages/terms.html">Terms</a></nav></div>
     <p class="footer__copy">&copy; 2026 SafeCare Medical Rides. All rights reserved.</p>
   </footer>
 

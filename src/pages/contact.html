@@ -7,7 +7,7 @@
   <meta name="description" content="Request non-emergency medical transportation in Elkhart, IN for appointments, dialysis, therapy, senior rides, discharge pickups, and facility-coordinated transportation." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Nunito+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/components.css" />
 </head>
@@ -45,11 +45,11 @@
           <dl class="detail-list">
             <div>
               <dt>Phone</dt>
-              <dd><a href="tel:+15742064245">574-206-4245</a></dd>
+              <dd><a href="tel:+15742149226">574-214-9226</a></dd>
             </div>
             <div>
               <dt>Email</dt>
-              <dd><a href="mailto:elkhartaxiservice@gmail.com">elkhartaxiservice@gmail.com</a></dd>
+              <dd><a href="mailto:safecare70@gmail.com">safecare70@gmail.com</a></dd>
             </div>
             <div>
               <dt>Service Area</dt>
@@ -59,7 +59,7 @@
           <p class="notice">SafeCare is for non-emergency transportation. For emergencies, call 911.</p>
         </aside>
 
-        <form class="form-card js-contact-form" action="#" method="post">
+        <form class="form-card js-contact-form" action="mailto:safecare70@gmail.com" method="post" data-recipient="safecare70@gmail.com" data-subject="SafeCare medical ride request">
           <p class="eyebrow">Medical Ride Intake</p>
           <h2>Send ride details.</h2>
           <p class="form-intro">Include as many appointment and contact details as possible so the ride can be reviewed and confirmed.</p>
@@ -142,10 +142,13 @@
             <textarea id="notes" name="notes" placeholder="Appointment time, facility department, expected wait time, caregiver contact, return trip window, payment or billing questions."></textarea>
           </div>
 
-          <label class="checkbox-line">
-            <input type="checkbox" name="consent" required />
-            <span>I agree to be contacted about this transportation request.</span>
-          </label>
+          <div class="checkbox-line sms-consent">
+            <input type="checkbox" id="sms-consent" name="sms-consent" value="Yes — marketing and account notifications" aria-describedby="sms-disclosures sms-policy-links sms-optional" />
+            <div><label for="sms-consent">By checking this box, you agree to receive SMS messages about marketing and account notifications from Safe Care Transportation.</label>
+            <p id="sms-disclosures">Reply STOP to opt-out at any time. For help, text 574-214-9226. Message and data rates may apply. Messaging frequency may vary.</p>
+            <p id="sms-policy-links">See our <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a> and <a href="terms.html" target="_blank" rel="noopener">SMS Terms and Conditions</a>.</p>
+            <p id="sms-optional">SMS consent is optional and is not a condition of purchase.</p></div>
+          </div>
 
           <button type="submit" class="btn btn--primary btn--lg">Submit Request</button>
           <p class="form-status" aria-live="polite"></p>
@@ -154,15 +157,15 @@
     </section>
   </main>
 
-  <a href="tel:+15742064245" class="sticky-call">Call 574-206-4245</a>
+  <a href="tel:+15742149226" class="sticky-call">Call 574-214-9226</a>
 
   <footer class="footer">
     <div class="container footer__grid">
-      <div><strong>SafeCare Medical Rides</strong><p>Elkhart, IN 46516</p><p><a href="tel:+15742064245">574-206-4245</a></p><p><a href="mailto:elkhartaxiservice@gmail.com">elkhartaxiservice@gmail.com</a></p></div>
+      <div><strong>SafeCare Medical Rides</strong><p>Elkhart, IN 46516</p><p><a href="tel:+15742149226">574-214-9226</a></p><p><a href="mailto:safecare70@gmail.com">safecare70@gmail.com</a></p><div class="social-links" aria-label="SafeCare social media"><a href="https://www.facebook.com/share/17e9rbNxzv/" target="_blank" rel="noopener" aria-label="SafeCare Medical Rides on Facebook" class="social-logo"><img src="../../public/images/facebook-logo.png" alt="" width="32" height="32" /></a><a href="https://www.tiktok.com/@safecaretransport?_r=1&amp;_t=ZP-97oWecIuBx9" target="_blank" rel="noopener" aria-label="SafeCare Medical Rides on TikTok" class="social-logo"><img src="../../public/images/tiktok-logo.png" alt="" width="32" height="32" /></a></div></div>
       <div><strong>Services</strong><a href="services.html">Services</a><a href="nemt.html">Medical Transportation</a><a href="senior.html">Senior Rides</a><a href="facilities.html">Facility Coordination</a></div>
       <div><strong>Service Areas</strong><p>Elkhart, Goshen, Mishawaka, South Bend, Granger, Nappanee, Bristol, Middlebury, Osceola, and nearby Northern Indiana.</p></div>
-      <div><strong>Hours</strong><p>Call for current availability. Scheduled medical rides should be requested as early as practical.</p></div>
     </div>
+    <div class="container footer__legal"><strong>PRIVACY AND TERMS</strong><nav aria-label="Privacy and terms"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div>
     <p class="footer__copy">&copy; 2026 SafeCare Medical Rides. All rights reserved.</p>
   </footer>
 

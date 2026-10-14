@@ -8,15 +8,30 @@ document.addEventListener('DOMContentLoaded', () => {
       const btn = form.querySelector('button[type="submit"]');
       const status = form.querySelector('.form-status');
       const originalText = btn ? btn.textContent : 'Submit Request';
+      const recipient = form.dataset.recipient || 'safecare70@gmail.com';
+      const subject = form.dataset.subject || 'SafeCare medical ride request';
+      const formData = new FormData(form);
+      const body = Array.from(formData.entries())
+        .filter(([, value]) => String(value).trim() !== '')
+        .map(([key, value]) => {
+          const label = key
+            .replace(/-/g, ' ')
+            .replace(/\b\w/g, (letter) => letter.toUpperCase());
+
+          return `${label}: ${value}`;
+        })
+        .join('\n');
 
       if (btn) {
         form.dataset.submitLabel = btn.textContent;
-        btn.textContent = 'Request Received';
+        btn.textContent = 'Opening Email';
       }
 
       if (status) {
-        status.textContent = 'Thanks. This demo form is ready for Formspree or another intake tool before launch.';
+        status.textContent = 'Your email app should open with the ride details filled in. Please send the email to submit the request.';
       }
+
+      window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
       window.setTimeout(() => {
         if (btn) btn.textContent = originalText;
