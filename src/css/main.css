@@ -665,6 +665,7 @@ a { color: inherit; text-decoration: none; }
   font-size: 1rem;
 }
 .booking-hero__image {
+  margin-top: 36px;
   aspect-ratio: 16 / 8.7;
   border-radius: 18px;
   box-shadow: var(--shadow-lg), 0 0 0 10px rgba(207,221,117,0.10);
