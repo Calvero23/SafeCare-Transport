@@ -55,6 +55,7 @@ h1,h2,h4,.section-heading h2,.split-section h2,.quick-paths h2,.booking-panel__h
 .checkbox-line{color:var(--gray-800)}
 .sms-consent a{color:var(--navy)}
 .quick-paths{background:#fff}
+.quick-paths__grid{grid-template-columns:1fr}
 .quick-paths article{background:var(--calm-gradient);border-radius:15px}
 .quick-paths article:first-child{display:flex;flex-direction:column;justify-content:center;gap:14px;min-height:210px}
 .quick-paths article:first-child span,.quick-paths article:first-child h2{margin:0}
