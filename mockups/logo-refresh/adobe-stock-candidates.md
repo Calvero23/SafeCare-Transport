@@ -1,6 +1,6 @@
 # Adobe Stock photo candidates
 
-These are research selections for the Safe Care Transportation website. Adobe Stock returned all five as **Photo**, **free tier**, and **not generative AI** on November 2, 2026. Check current availability and license each image in Adobe Stock before placing it on the live website. The mockup uses a photo placeholder, not an unlicensed Stock preview.
+Adobe Stock returned all five as **Photo**, **free tier**, and **not generative AI** on November 2, 2026. The user authorized licensing photos 1–4, and Adobe returned `just_purchased` for each. Photo 5 remains unlicensed and unused. The updated mockup uses licensed photos 1–4. Confirm wheelchair-accessible vehicle availability before using photo 2 as a service promise.
 
 | Suggested placement | Adobe Stock ID | Listing title | Link |
 | --- | --- | --- | --- |
