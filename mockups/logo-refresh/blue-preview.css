@@ -90,5 +90,5 @@ h1,h2,h4,.section-heading h2,.split-section h2,.quick-paths h2,.booking-panel__h
   .booking-hero__image{aspect-ratio:1.55;margin-top:30px}
   .booking-panel{padding:22px;position:static}
   .service-tile__photo{height:185px}
-  .sticky-call{background:var(--navy);left:auto;right:16px;bottom:16px;width:auto;max-width:calc(100% - 32px);font-size:13px;padding:11px 15px;border-radius:9px}
+  .sticky-call{display:none}
 }
