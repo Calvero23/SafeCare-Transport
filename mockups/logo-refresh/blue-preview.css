@@ -96,4 +96,6 @@ h1,h2,h4,.section-heading h2,.split-section h2,.quick-paths h2,.booking-panel__h
   .booking-panel{padding:22px;position:static}
   .service-tile__photo{height:185px}
   .sticky-call{display:none}
+  #process .split-section{gap:20px}
+  #process.page-section{padding:46px 0}
 }
