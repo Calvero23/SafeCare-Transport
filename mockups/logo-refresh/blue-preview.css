@@ -56,6 +56,10 @@ h1,h2,h4,.section-heading h2,.split-section h2,.quick-paths h2,.booking-panel__h
 .sms-consent a{color:var(--navy)}
 .quick-paths{background:#fff}
 .quick-paths article{background:var(--calm-gradient);border-radius:15px}
+.quick-paths article:first-child{display:flex;flex-direction:column;justify-content:center;gap:14px;min-height:210px}
+.quick-paths article:first-child span,.quick-paths article:first-child h2{margin:0}
+.quick-paths article:first-child h2{font-size:clamp(1.8rem,3vw,2.3rem);line-height:1.15}
+.quick-paths article:first-child a{font-size:clamp(1.35rem,2.4vw,1.75rem);line-height:1.2}
 .quick-paths article+article{background:#fff}
 .quick-paths span{color:#d9e5fa}
 .quick-paths a{color:#fff}
